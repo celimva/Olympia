@@ -1,0 +1,20 @@
+{
+  "name": "nutrisport",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "olympia",
+    "html",
+    "fitness"
+  ],
+  "author": "Celia Valero Amil",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "bulma-extensions": "^6.2.7"
+  }
+}

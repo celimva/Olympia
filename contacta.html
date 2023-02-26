@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLYMPYA</title>
+    <link rel="stylesheet" href="./bulma-dist/bulma.min.css">
+    <link rel="stylesheet" href="./bulma-dist/bulma-extensions.min.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand" style="width: 30%;">
+            <div class="navbar-item"
+                style=" display:flex; flex-flow:row nowrap; background-color: #00d1b2 ; border-radius: 1.5rem; margin: 0.5%;">
+                <a href="/">
+                    <img src="logo.png" style="max-height: 4.75rem;">
+                    <img src="nombre.png" style="max-height: 4rem;">
+                </a>
+            </div>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Inicio
+                </a>
+
+                <a class="navbar-item">
+                    Sobre nosotros
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Más
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="planpago.html">
+                            Plan de pago
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="/contacta.html">
+                            Contacta
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary" href="log.html">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light" href="log.html">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pricing-table"
+        style="display: flex; flex-flow:row nowrap; width: 90%; margin-left: auto; margin-right: auto; margin-top: 2%; justify-content: space-around;">
+        <div style="display: flex; flex-flow:column nowrap; width: 40%;">
+            <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Email">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field has-addons">
+                <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                        <select name="country">
+                            <option value="Argentina">España</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control">
+                    <button type="submit" class="button is-primary">Choose</button>
+                </div>
+            </div>
+            <div class="box" style="display:flex; flex-flow: column nowrap;">
+                <strong style="font-size: large; margin-bottom: 2%;">¿Qué plan te interesa?</strong>
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="answer">
+                        Amateur
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="answer">
+                        Empresa
+                    </label>
+
+                </div>
+            </div>
+            <div style="margin-bottom: 2%;">
+                <textarea class="textarea is-warning" placeholder="Escribe tus inquietudes y te llamaremos"></textarea>
+            </div>
+            <div class="field" style="margin-bottom: 2%;">
+                <p class="control">
+                    <button class="button is-warning">
+                        Enviar
+                    </button>
+                </p>
+            </div>
+        </div>
+        <div style="display: flex; flex-flow: column nowrap; width: 38%; margin-bottom: 2%;">
+            <img style="border-radius: 13px;"
+                src="https://i.pinimg.com/564x/b2/e7/f9/b2e7f93b049f8e8e0d36ada51eaf534c.jpg">
+
+        </div>
+
+    </div>
+    <nav class="navbar is-primary">
+        <div
+            style="height: fit-content;display:flex; flex-flow: row nowrap; width: 90%; margin-left: auto; margin-right: auto;justify-content: space-around;">
+            <div style="width: 20%; height: fit-content; padding: 2%;">
+                <img src="/logo.png" style="width: 100%; height: 45%;">
+            </div>
+            <div style="width:30%; padding: 1%;">
+                <article class="panel is-warning" style="background-color: antiquewhite;">
+                    <p class="panel-heading">
+                        Info
+                    </p>
+                    <p class="panel-tabs">
+                        <a class="is-active">All</a>
+                        <a>Public</a>
+                        <a>Private</a>
+                        <a>Sources</a>
+                        <a>Forks</a>
+                    </p>
+                    <div class="panel-block">
+                        <p class="control has-icons-left">
+                            <input class="input is-warning" type="text" placeholder="Search">
+                            <span class="icon is-left">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <a class="panel-block is-active">
+                        <span class="panel-icon">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        Plan Premium
+                    </a>
+                    <a class="panel-block">
+                        <span class="panel-icon">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        Clienes
+                    </a>
+
+
+                </article>
+
+            </div>
+            <div style="display: flex; flex-flow: row nowrap; width: 60%;justify-content: space-around">
+                <div style="display:flex; flex-flow: column wrap;width: 30%; justify-content: space-evenly;">
+                    <div style="display: flex; flex-flow: row nowrap; justify-content: space-evenly;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+                            style="width: 20%;">
+                        <a href="/" style="list-style: none; color: antiquewhite;">@Olympia</a>
+                    </div>
+                    <div style="display: flex; flex-flow: row nowrap; justify-content: space-evenly;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png"
+                            style="width: 20%;">
+                        <a href="/" style="list-style: none; color: antiquewhite;">@Olympia</a>
+                    </div>
+                    <div style="display: flex; flex-flow: row nowrap; justify-content: space-evenly;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+                            style="width: 20%;">
+                        <a href="/" style="list-style: none; color: antiquewhite;">@Olympia</a>
+                    </div>
+                </div>
+                <div style="width: 40%;; height: 100%; padding: 1%;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1213.2093054460938!2d-5.993448961103054!3d37.402188180268666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126bf7ff12a3cf%3A0x438da41c551c80d5!2sEscuelas%20Profesionales%20de%20la%20Sagrada%20Familia%20Nuestra%20Se%C3%B1ora%20de%20los%20Reyes!5e0!3m2!1ses!2ses!4v1676990170568!5m2!1ses!2ses"
+                        style="border-radius:13px;  min-height: -webkit-fill-available;; " allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <script src="./bulma-dist/bulma-extensions.min.js"></script>
+</body>
+
+</html>
