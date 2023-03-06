@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLYMPYA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OLYMPIA</title>
     <link rel="stylesheet" href="./bulma-dist/bulma.min.css">
     <link rel="stylesheet" href="./bulma-dist/bulma-extensions.min.css">
+
 </head>
 
 <body>
@@ -75,83 +75,113 @@
         </div>
     </nav>
 
-    <div class="pricing-table"
-        style="display: flex; flex-flow:row nowrap; width: 90%; margin-left: auto; margin-right: auto; margin-top: 2%; justify-content: space-around;">
-        <div style="display: flex; flex-flow:column nowrap; width: 40%;">
-            <div class="field">
-                <p class="control has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Email">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
-                </p>
+    <div
+        style="width: 90%;text-align: center;  margin: auto; margin-top: 2%; margin-bottom:2%; padding: 3px;align-content: center; border: solid #00d1b2; border-radius: 20px; border-width: 1px;">
+
+        <img src="recetas.jpg" alt="Placeholder image" style="margin:auto;border-radius: 20px;">
+        <div style="width: 70%; margin: auto;display: flex; flex-flow: row nowrap;justify-content: space-evenly;">
+            <div style="display: flex;margin-bottom: 20%; flex-flow: column nowrap;justify-content: space-evenly;">
+                <div class="select is-primary" style="width:92%">
+                    <select style="width: 100%;">
+                        <option>Lunes</option>
+                        <option>Martes</option>
+                        <option>Miércoles</option>
+                        <option>Jueves</option>
+                        <option>Viernes</option>
+                        <option>Sábado</option>
+                        <option>Domingo</option>
+
+                    </select>
+                    <input class="input is-primary" type="text" placeholder="Proteínas">
+                    <input class="input is-warning" type="text" placeholder="Hidratos de carbono">
+                    <input class="input is-link" type="text" placeholder="Grasas">
+                </div>
+
             </div>
-            <div class="field">
-                <p class="control has-icons-left">
-                    <input class="input" type="password" placeholder="Password">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-lock"></i>
-                    </span>
-                </p>
+            <div style="width: 50%; text-align: center; margin:auto;border-radius: 20px;">
+                <img src="evolucion.jpg">
+
             </div>
-            <div class="field has-addons">
-                <div class="control is-expanded">
-                    <div class="select is-fullwidth">
-                        <select name="country">
-                            <option value="Argentina">España</option>
-                            <option value="Bolivia">Bolivia</option>
-                            <option value="Brazil">Brazil</option>
-                            <option value="Chile">Chile</option>
-                            <option value="Colombia">Colombia</option>
-                            <option value="Ecuador">Ecuador</option>
-                            <option value="Guyana">Guyana</option>
-                            <option value="Paraguay">Paraguay</option>
-                            <option value="Peru">Peru</option>
-                            <option value="Suriname">Suriname</option>
-                            <option value="Uruguay">Uruguay</option>
-                            <option value="Venezuela">Venezuela</option>
-                        </select>
+        </div>
+    </div>
+
+    <div
+        style="width: 90%;text-align: center;  margin: auto; margin-top: 2%; margin-bottom:2%; padding: 22px;align-content: center; border: solid #00d1b2; border-radius: 20px; border-width: 1px;">
+
+        <div style="width: 84%; margin: auto;display: flex; flex-flow: row nowrap;justify-content: space-evenly;">
+            <div class="card" style=" margin-right: 8%;">
+                <div class="card-content">
+                    <h1 style="font-size: 120%; color: #00d1b2; font-weight: bold; ">Mercadona</h1>
+                    <div class="content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th><abbr title="Position">Alimento</abbr></th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th>Manzanas</th>
+                                    <td>2</td>
+                                    <td>1,5 €</td>
+                                </tr>
+                                <tr>
+                                    <th>Huevos</th>
+                                    <td>12 unidades</td>
+                                    <td>12 €</td>
+                                </tr>
+                                <tr>
+                                    <th>Yogurt proteínas caramelo</th>
+                                    <td>4 unidades</td>
+                                    <td>2,5 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="control">
-                    <button type="submit" class="button is-primary">Choose</button>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h1 style="font-size: 120%; color: #00d1b2; font-weight: bold; ">Lidl</h1>
+                    <div class="content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th><abbr title="Position">Alimento</abbr></th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th>Guacamole</th>
+                                    <td>1</td>
+                                    <td>1,5 €</td>
+                                </tr>
+                                <tr>
+                                    <th>Carne picada de ternera</th>
+                                    <td>1/2 kg</td>
+                                    <td>3,5 €</td>
+                                </tr>
+                                <tr>
+                                    <th>Caldo de pollo 1 l.</th>
+                                    <td>2 unidades</td>
+                                    <td>4,5 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="box" style="display:flex; flex-flow: column nowrap;">
-                <strong style="font-size: large; margin-bottom: 2%;">¿Qué plan te interesa?</strong>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="answer">
-                        Amateur
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="answer">
-                        Empresa
-                    </label>
-
-                </div>
-            </div>
-            <div style="margin-bottom: 2%;">
-                <textarea class="textarea is-warning" placeholder="Escribe tus inquietudes y te llamaremos"></textarea>
-            </div>
-            <div class="field" style="margin-bottom: 2%;">
-                <p class="control">
-                    <button class="button is-warning">
-                        Enviar
-                    </button>
-                </p>
-            </div>
         </div>
-        <div style="display: flex; flex-flow: column nowrap; width: 38%; margin-bottom: 2%;">
-            <img style="border-radius: 13px;"
-                src="https://i.pinimg.com/564x/b2/e7/f9/b2e7f93b049f8e8e0d36ada51eaf534c.jpg">
-
-        </div>
-
     </div>
+
     <nav class="navbar is-primary">
         <div
             style="height: fit-content;display:flex; flex-flow: row nowrap; width: 90%; margin-left: auto; margin-right: auto;justify-content: space-around;">
