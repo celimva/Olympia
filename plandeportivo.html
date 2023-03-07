@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLYMPYA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OLYMPIA</title>
     <link rel="stylesheet" href="./bulma-dist/bulma.min.css">
     <link rel="stylesheet" href="./bulma-dist/bulma-extensions.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+
 </head>
 
 <body>
@@ -78,42 +79,50 @@
             </div>
         </div>
     </nav>
-
-    <div class="pricing-table"
-        style="display: flex; flex-flow:row nowrap; width: 90%; margin-left: auto; margin-right: auto; margin-top: 2%; margin-bottom: 2%; justify-content: space-around;">
+    <div style="display:flex; flex-flow: column wrap; margin:auto">
         <div
-            style="display: flex; flex-flow:column nowrap; padding:3%;width: 40%;  border: solid #00d1b2; border-radius: 20px; border-width: 1px;">
-            <div class="card" style="margi-top:2%; margin-bottom: 2%;">
-                <div class="card-content">
-                    <div class="content">
-                        Los Juegos Olímpicos o olimpiadas o lo que es lo mismo de manera abreviada, JJ. OO.,
-                        son eventos deportivos multidisciplinarios en los que participan atletas de diversas
-                        partes del mundo, en la antigua Grecia eran dedicados al dios Zeus.
-                    </div>
-                </div>
-            </div>
-            <div style=" border-radius: 20px; ">
+            style="display: flex; flex-flow: row nowrap; margin:auto; justify-content: space-evenly;width: 80%; margin-top: 2%;">
+            <div class="select is-primary" style="width: 30%;">
+                <select style="width: 100%;">
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miércoles</option>
+                    <option>Jueves</option>
+                    <option>Viernes</option>
+                    <option>Sábado</option>
+                    <option>Domingo</option>
 
-                <img style="padding:2%;  border-radius: 20px; " src="olimpiadas.jpg" alt="Placeholder image">
-
+                </select>
             </div>
-            <div class="card" style="margi-top:2%; margin-bottom: 2%;">
-                <div class=" card-content">
-                    <div class="content">
-                        Olympia, dispone de recursos y una estructura organizada que nos permite ofrecer
-                        con las mejores garantías la gestión de programas de actividades artísticas,
-                        deportivas, culturales e idiomas a nivel escolar y de instituciones deportivas
-                        municipales o privadas. A su vez organizamos competiciones y torneos para empresas privadas,
-                        adaptándonos a las necesidades socio-culturales de los centros educativos.
-                    </div>
-                </div>
+            <div class="select is-warning" style="width: 30%;">
+                <select style="width: 100%;">
+                    <option>Ejercicios de piernas</option>
+                    <option>Ejercicios de espalda</option>
+                    <option>Ejercicios de abdomen</option>
+                    <option>Cardio</option>
+                </select>
+            </div>
+            <div class="select is-success" style="width: 30%;">
+                <select style="width: 100%;">
+                    <option>Bajo</option>
+                    <option>Medio</option>
+                    <option>Alto</option>
+                    <option>Neat</option>
+                </select>
+            </div>
+
+        </div>
+        <div
+            style="display:flex; flex-flow:row nowrap; width: 80%;text-align: center;  margin: auto; margin-top: 2%; margin-bottom:2%; align-content: center; border: solid #00d1b2; border-radius: 20px; border-width: 1px;">
+            <img style="border-radius:20px; margin: 3%3%3%3%; width: 40%;"
+                src="https://st2.depositphotos.com/32281612/42313/i/600/depositphotos_423133610-stock-photo-young-african-woman-keep-balance.jpg">
+            <div style="width:40%;margin: 3%3%3%3%; ">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/_riM2ix__hA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
         </div>
-        <div style="display: flex; flex-flow: column nowrap; width: 38%; margin-bottom: 2%; justify-content: center;">
-            <img style="border-radius: 13px;" src="logocompletorosa.png">
-
-        </div>
-
     </div>
     <nav class="navbar is-primary">
         <div
@@ -187,6 +196,13 @@
         </div>
     </nav>
     <script src="./bulma-dist/bulma-extensions.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach('#carousel-demo', {
+            slidesToScroll: 1,
+            slidesToShow: 4
+        });
+    </script>
 </body>
 
 </html>
